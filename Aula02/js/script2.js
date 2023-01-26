@@ -14,7 +14,7 @@
 // console.log(sum);
 
 // var greet = "Olá", who = "Mundo";
-// console.log("%s, %s!", who, greet);
+// console.log("%s, %s!", who, greet);   //%s = string letras
 
 console.log({
 'Email': '',
