@@ -106,5 +106,15 @@ const saida2 = `<h2>${produtos[1].nome}</h2>
 document.getElementById("produto2").innerHTML = saida2;
 
 
+//contagem na tela de 1 a 10 -- repetição
+for(let i = 1; i<=10; i++){
+    console.log(i);
+}
+
+
+for(let bt = 1 ; bt <=10; bt++){
+    document.getElementById("caixa").innerHTML += `<button> Botão ${bt}</button>`;
+}
+
 
 
