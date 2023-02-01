@@ -15,6 +15,8 @@ function troca(){
 
     rsimg = rsimg == "img/foto1.jpg" ? "img/foto2.jpg" : "img/foto1.jpg";  //imagem é foto 1? se é a foto 2 troca para foto 1
     
+    rsimg = rsimg == "img/foto1.jpg" ? "img/foto2.jpg" : "img/foto1.jpg";  //rsimg é igual a foto1? imagem é foto 1? se é verdadeiro 2 troca para foto 1
+    
     document.getElementById("foto").src = rsimg;
 
     
@@ -28,9 +30,9 @@ function infoData() {
 //vamos fazer uma instancia da classe date(), esta classe possui muitas funções, tais como: getHours, getData, getMouth
 const tempo = new Date();
 var datacompleta = tempo.toLocaleDateString();
-var diames = tempo.getDate();
-var diasemana = tempo.getDay();
-var mes = tempo.getMonth();
+var diames = tempo.getDate();//traz o dia do mes
+var diasemana = tempo.getDay();//traz o dia da semana indexado de 0 a 6
+var mes = tempo.getMonth();//traz o mes indexado de 0 a 11
 var hora = tempo.getHours();
 var minutos = tempo.getMinutes();
 var segundos = tempo.getSeconds();
