@@ -2,21 +2,22 @@ function troca(){
     var imagem = document.getElementById("foto").src;
 
     console.log(imagem);
-    //vamos pegar a quantidade de caracteres da variável imagem 
-    //com o comando length;
+    // //vamos pegar a quantidade de caracteres da variável imagem 
+    // //com o comando length;
     console.log(imagem.length);
-    //vamos utilizar o comando substring para obter um trecho de texto
-    //do caminho do nome do arquivo
+    // //vamos utilizar o comando substring para obter um trecho de texto
+    // //do caminho do nome do arquivo
     console.log(imagem.substring(imagem.documentlength -13,imagem.length));
     
-    var rsimg = imagem.substring(imagem.length -13,imagem.length); //não abre dentro do onedrive
+    var rsimg = imagem.substring(imagem.length -13,imagem.length); 
 
-    
+    console.log(rsimg);
+
     rsimg = rsimg == "img/foto1.jpg" ? "img/foto2.jpg" : "img/foto1.jpg";  //imagem é foto 1? se é a foto 2 troca para foto 1
     
     document.getElementById("foto").src = rsimg;
 
-    console.log(rsimg);
+    
 }
 
 
@@ -36,6 +37,8 @@ var segundos = tempo.getSeconds();
 
 
 var dias = "";
+
+
 
 //desvio de fluxo multiplo com switch case
 
