@@ -4,14 +4,20 @@
 
  var nome = "Pedro,Paulo"; 
  console.log(nome);
+ console.log("------------------------------------");
+ 
  //exibir apenas o Paulo
  console.log(nome.substring(6,11));
+ console.log("------------------------------------");
 
  //Criando um Array para os nomes
  const nomes = ["Pedro","Paulo"];
  console.log(nomes);
+ console.log("------------------------------------");
+ 
  //exibir apenas o Paulo
  console.log(nomes[1]);
+ console.log("------------------------------------");
 
 
 //  nomes = "Olá";
@@ -20,17 +26,20 @@
 
 //Vamos adicionar mais nomes ao array
 //usaremos o comando push
-
 nomes.push("Roberto");
 console.log(nomes);
+console.log("------------------------------------");
 
 //exibir o último nome
 console.log(nomes[nomes.length-1]) //length = quantidadde
+console.log("------------------------------------");
 
 //adicionar mais um nome
 nomes.push("Vanessa");
 console.log(nomes);
 console.log("------------------------------------");
+
+
 //Vamos criar dois objetos de produtos de informática
 prod1 = {
     nome:"Mouse",
@@ -42,13 +51,17 @@ prod2 = {
     marca:"Microsoft",
     preco:180.00            //ultimo não vai virgula
 };
+
 //vamos criar um array de produtos
 const produtos = [prod1,prod2];
 console.log(produtos);
+console.log("------------------------------------");
+
 //exibir o produto1 prod1
-//console.log(prod1); //pegando a linha35
+//console.log(prod1); //pegando a linha35, prod errado
 
 console.log(produtos[0]);
+console.log("------------------------------------");
 
 //exibir a marcado produto
 console.log(produtos[0].marca);
@@ -68,6 +81,8 @@ const clientes = [
     }
 ];
 console.log(clientes);
+console.log("------------------------------------");
+
 //vamos adicionar um novo cliente
 clientes.push({
     nome:"Gustavo",
@@ -75,6 +90,7 @@ clientes.push({
     cidade:"São Paulo"
 });
 console.log(clientes);
+console.log("------------------------------------");
 
 
 //*********************************************************/
